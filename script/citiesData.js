@@ -299,7 +299,7 @@ window.citiesData = {
       "eventCount": 0,
       "additionalInfo": ""
     },
-    "muğla": {
+    "mugla": {
       "population": "1.081.867",
       "eventCount": 0,
       "additionalInfo": ""
