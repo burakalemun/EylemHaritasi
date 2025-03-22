@@ -1,4 +1,3 @@
-/* Sayfanın tamamını kapsayacak şekilde */
 html, body {
     height: 100%;
     margin: 0;
@@ -64,27 +63,28 @@ svg {
 }
 
 .city-tooltip {
-    position: fixed; /* Değiştirdim: Mobilde absolute kayabilir */
+    position: fixed;
+    z-index: 9999;
     background-color: rgba(0, 0, 0, 0.85);
     color: white;
     padding: 10px;
     border-radius: 8px;
-    font-family: 'Arial', sans-serif;
-    font-size: 16px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
     font-weight: bold;
-    z-index: 1000;
     pointer-events: none;
-    transition: all 0.3s ease;
-    transform: translate(-50%, -120%); /* Ortala ve biraz yukarı taşı */
     opacity: 0;
-    white-space: nowrap;
-    max-width: 80vw;
-    text-align: center;
+    transform: translateY(-10px);
+    transition: all 0.2s ease;
+    max-width: 90vw;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    white-space: normal;
 }
 
 .city-tooltip.show {
     opacity: 1;
-    transform: translate(-50%, -100%);
+    transform: translateY(0);
 }
 
 
@@ -129,7 +129,6 @@ span {
     color: #333;
 }
 
-
 @media (max-width: 768px) {
     .header_text {
         font-size: 24px;
@@ -144,7 +143,7 @@ span {
 
     .mapdiv {
         flex-direction: column;
-        padding-top: 60px; /* header üstüne binmesin diye */
+        padding-top: 60px;
     }
 
     .city-tooltip {

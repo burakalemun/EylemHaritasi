@@ -84,18 +84,10 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   const citiesData = window.citiesData || {};
-
   const tooltipsContainer = document.getElementById("tooltips-container");
 
-  const darkRedCities = [
-    'istanbul', 'ankara', 'izmir',
-  ];
-
-  const RedCities = [
-    'adana', 'antalya', 'eskisehir', 'mersin', 'mugla', 'bursa', 'aydin', 'trabzon', 'corum',
-    'konya', 'adapazari', 'amasya', 'giresun', 'rize', 'kirikkale', 'karabuk',
-  ]
-
+  const darkRedCities = ['istanbul', 'ankara', 'izmir'];
+  const RedCities = ['adana', 'antalya', 'eskisehir', 'mersin', 'mugla', 'bursa', 'aydin', 'trabzon', 'corum', 'konya', 'adapazari', 'amasya', 'giresun', 'rize', 'kirikkale', 'karabuk'];
   const lightRedCities = [
     'artvin', 'ordu', 'samsun', 'kirsehir', 'gaziantep', 'nigde', 'kayseri', 'tunceli', 'balikesir',
     'canakkale', 'denizli', 'manisa', 'kutahya', 'isparta', 'izmit', 'tekirdag', 'edirne', 'hatay',
@@ -103,8 +95,22 @@ document.addEventListener('DOMContentLoaded', () => {
     'tokat', 'sivas', 'kars', 'yozgat', 'afyon', 'bilecik', 'burdur', 'karaman', 'osmaniye', 'kahramanmaras',
     'adiyaman', 'diyarbakir', 'ardahan', 'igdir', 'urfa', 'batman', 'kirklareli', 'duzce', 'nevsehir', 'aksaray',
     'cankiri', 'yalova', 'erzurum',
-  ]
+  ];
 
+  function positionTooltip(tooltipElement, x, y) {
+    const tooltipWidth = tooltipElement.offsetWidth;
+    const tooltipHeight = tooltipElement.offsetHeight;
+
+    const padding = 10;
+    const maxX = window.innerWidth - tooltipWidth - padding;
+    const maxY = window.innerHeight - tooltipHeight - padding;
+
+    const posX = Math.min(x + 10, maxX);
+    const posY = Math.min(y + 10, maxY);
+
+    tooltipElement.style.left = posX + 'px';
+    tooltipElement.style.top = posY + 'px';
+  }
 
   Object.keys(cities).forEach(cityId => {
     const cityName = cities[cityId];
@@ -123,36 +129,47 @@ document.addEventListener('DOMContentLoaded', () => {
     tooltipsContainer.appendChild(tooltip);
 
     const cityPath = document.getElementById(cityId);
+    if (!cityPath) {
+      console.warn(`${cityId} için SVG path bulunamadı!`);
+      return;
+    }
 
     if (darkRedCities.includes(cityId)) {
-      cityPath?.style && (cityPath.style.fill = '#730008');
+      cityPath.style.fill = '#730008';
+    } else if (RedCities.includes(cityId)) {
+      cityPath.style.fill = '#c00b00';
+    } else if (lightRedCities.includes(cityId)) {
+      cityPath.style.fill = '#ff0025';
     }
 
-    if (RedCities.includes(cityId)) {
-      cityPath?.style && (cityPath.style.fill = '#c00b00');
-    }
+    const tooltipElement = document.getElementById(`tooltip-${cityId}`);
 
-    if (lightRedCities.includes(cityId)) {
-      cityPath?.style && (cityPath.style.fill = '#ff0025');
-    }
+    cityPath.addEventListener('mouseover', (event) => {
+      positionTooltip(tooltipElement, event.clientX, event.clientY);
+      tooltipElement.classList.add('show');
+    });
 
-    if (cityPath) {
-      cityPath.addEventListener('mouseover', (event) => {
-        const tooltipElement = document.getElementById(`tooltip-${cityId}`);
-        const maxX = window.innerWidth - tooltipElement.offsetWidth - 10;
-        const maxY = window.innerHeight - tooltipElement.offsetHeight - 10;
+    cityPath.addEventListener('mousemove', (event) => {
+      positionTooltip(tooltipElement, event.clientX, event.clientY);
+    });
 
-        tooltipElement.style.left = Math.min(event.pageX + 10, maxX) + 'px';
-        tooltipElement.style.top = Math.min(event.pageY + 150 , maxY) + 'px';
-        tooltipElement.classList.add('show');
-      });
+    cityPath.addEventListener('mouseout', () => {
+      tooltipElement.classList.remove('show');
+    });
 
-      cityPath.addEventListener('mouseout', () => {
-        const tooltipElement = document.getElementById(`tooltip-${cityId}`);
-        tooltipElement.classList.remove('show');
-      });
-    } else {
-      console.warn(`${cityId} için SVG path bulunamadı!`);
-    }
+    cityPath.addEventListener('touchstart', (event) => {
+      const touch = event.touches[0];
+      positionTooltip(tooltipElement, touch.clientX, touch.clientY);
+      tooltipElement.classList.add('show');
+    });
+
+    cityPath.addEventListener('touchmove', (event) => {
+      const touch = event.touches[0];
+      positionTooltip(tooltipElement, touch.clientX, touch.clientY);
+    });
+
+    cityPath.addEventListener('touchend', () => {
+      tooltipElement.classList.remove('show');
+    });
   });
 });
