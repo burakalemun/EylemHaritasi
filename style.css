@@ -21,13 +21,38 @@ html, body {
     letter-spacing: 1px;
     padding: 10px;
     border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .header_text {
+        font-size: 24px;
+        padding: 8px;
+        top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header_text {
+        font-size: 20px;
+    }
 }
 
 .mapdiv {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    position: relative;
+    aspect-ratio: 2.048 / 1;
+}
+
+.mapdiv svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
 }
 
 svg {
@@ -39,8 +64,8 @@ svg {
 }
 
 .city-tooltip {
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed; /* Değiştirdim: Mobilde absolute kayabilir */
+    background-color: rgba(0, 0, 0, 0.85);
     color: white;
     padding: 10px;
     border-radius: 8px;
@@ -50,14 +75,18 @@ svg {
     z-index: 1000;
     pointer-events: none;
     transition: all 0.3s ease;
-    transform: translateY(-10px);
+    transform: translate(-50%, -120%); /* Ortala ve biraz yukarı taşı */
     opacity: 0;
+    white-space: nowrap;
+    max-width: 80vw;
+    text-align: center;
 }
 
 .city-tooltip.show {
     opacity: 1;
-    transform: translateY(0);
+    transform: translate(-50%, -100%);
 }
+
 
 .city-tooltip .data-info {
     font-size: 14px;
@@ -100,3 +129,48 @@ span {
     color: #333;
 }
 
+
+@media (max-width: 768px) {
+    .header_text {
+        font-size: 24px;
+        padding: 8px;
+        top: 10px;
+    }
+
+    svg {
+        width: 95vw;
+        height: auto;
+    }
+
+    .mapdiv {
+        flex-direction: column;
+        padding-top: 60px; /* header üstüne binmesin diye */
+    }
+
+    .city-tooltip {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .city-tooltip .data-info {
+        font-size: 12px;
+    }
+
+    .color-scale {
+        bottom: 10px;
+        left: 10px;
+        font-size: 12px;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 6px;
+        border-radius: 6px;
+    }
+
+    .color-item {
+        width: 12px;
+        height: 12px;
+    }
+
+    span {
+        font-size: 13px;
+    }
+}

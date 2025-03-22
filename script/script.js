@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const RedCities = [
     'adana', 'antalya', 'eskisehir', 'mersin', 'mugla', 'bursa', 'aydin', 'trabzon', 'corum',
-    'konya', 'adapazari', 'amasya', 'giresun', 'rize', 'kirikkale', 'karabuk'
+    'konya', 'adapazari', 'amasya', 'giresun', 'rize', 'kirikkale', 'karabuk',
   ]
 
   const lightRedCities = [
@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
     'usak', 'kilis', 'malatya', 'elazig', 'erzincan', 'bartin', 'zonguldak', 'bolu', 'sinop', 'kastamonu',
     'tokat', 'sivas', 'kars', 'yozgat', 'afyon', 'bilecik', 'burdur', 'karaman', 'osmaniye', 'kahramanmaras',
     'adiyaman', 'diyarbakir', 'ardahan', 'igdir', 'urfa', 'batman', 'kirklareli', 'duzce', 'nevsehir', 'aksaray',
-    'cankiri', 'yalova'
+    'cankiri', 'yalova', 'erzurum',
   ]
 
 
@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const maxY = window.innerHeight - tooltipElement.offsetHeight - 10;
 
         tooltipElement.style.left = Math.min(event.pageX + 10, maxX) + 'px';
-        tooltipElement.style.top = Math.min(event.pageY + 10, maxY) + 'px';
+        tooltipElement.style.top = Math.min(event.pageY + 150 , maxY) + 'px';
         tooltipElement.classList.add('show');
       });
 

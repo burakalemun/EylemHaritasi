@@ -2,7 +2,7 @@ window.citiesData = {
     "adana": {
       "population": "2.280.484",
       "eventCount": 0,
-      "additionalInfo": ""
+      "additionalInfo": "20.30 Atatürk Parkı - 19.30 Gazipaşa Çocuk Parkı"
     },
     "adapazari": {
       "population": "1.025.080",
@@ -37,12 +37,12 @@ window.citiesData = {
     "ankara": {
       "population": "5.864.049",
       "eventCount": 0,
-      "additionalInfo": ""
+      "additionalInfo": "21.00 Güvenpark"
     },
     "antalya": {
       "population": "2.722.103",
       "eventCount": 0,
-      "additionalInfo": ""
+      "additionalInfo": "19.00 Beachpark Arabica Coffe Önü - 20.30 Hayat Park, Konyaaltı - 20.30 Atatürk Anıtı önünde (Alanya)"
     },
     "ardahan": {
       "population": "91.354",
@@ -57,7 +57,7 @@ window.citiesData = {
     "aydin": {
       "population": "1.165.943",
       "eventCount": 0,
-      "additionalInfo": ""
+      "additionalInfo": "20.30 Kent Meydanı"
     },
     "balikesir": {
       "population": "1.276.096",
@@ -112,7 +112,7 @@ window.citiesData = {
     "canakkale": {
       "population": "568.966",
       "eventCount": 0,
-      "additionalInfo": ""
+      "additionalInfo": "20.30 Cumhuriyet Meydanı , Lokal Önü"
     },
     "cankiri": {
       "population": "199.981",
@@ -127,12 +127,12 @@ window.citiesData = {
     "denizli": {
       "population": "1.061.371",
       "eventCount": 0,
-      "additionalInfo": ""
+      "additionalInfo": "21.00 CHP Denizli İl Başkanlığı önünde - 17.00 Eski Mezitli Belediyesi Önü"
     },
     "diyarbakir": {
       "population": "1.833.684",
       "eventCount": 0,
-      "additionalInfo": ""
+      "additionalInfo": "20.30 Dağkapı Meydanı"
     },
     "duzce": {
       "population": "412.344",
@@ -142,27 +142,27 @@ window.citiesData = {
     "edirne": {
       "population": "421.247",
       "eventCount": 0,
-      "additionalInfo": ""
+      "additionalInfo": "20.30 Esentepe Halı Sahası"
     },
     "elazig": {
       "population": "603.941",
       "eventCount": 0,
-      "additionalInfo": ""
+      "additionalInfo": "20.30 PTT Meydanı"
     },
     "erzincan": {
       "population": "241.239",
       "eventCount": 0,
-      "additionalInfo": ""
+      "additionalInfo": "14.00 Dörtyol Meydan"
     },
     "erzurum": {
       "population": "745.005",
       "eventCount": 0,
-      "additionalInfo": ""
+      "additionalInfo": "20.30 CHP Erzurum İl Başkanlığı Önü"
     },
     "eskisehir": {
       "population": "921.630",
       "eventCount": 0,
-      "additionalInfo": ""
+      "additionalInfo": "18.00 Espark Bağlar Kapısı"
     },
     "gaziantep": {
       "population": "2.193.363",
@@ -187,7 +187,7 @@ window.citiesData = {
     "hatay": {
       "population": "1.562.185",
       "eventCount": 0,
-      "additionalInfo": ""
+      "additionalInfo": "20.00 ESKİ PTT ÖNÜ"
     },
     "igdir": {
       "population": "206.857",
@@ -197,32 +197,32 @@ window.citiesData = {
     "isparta": {
       "population": "446.409",
       "eventCount": 0,
-      "additionalInfo": ""
+      "additionalInfo": "IYAS AVM yanı, ESKİ OTOGAR SAAT 20:00"
     },
     "istanbul": {
       "population": "15.701.602",
       "eventCount": 0,
-      "additionalInfo": ""
+      "additionalInfo": "20.30 Saraçhane"
     },
     "izmir": {
       "population": "4.493.242",
       "eventCount": 0,
-      "additionalInfo": ""
+      "additionalInfo": "20.00 Lozan Meydanı"
     },
     "izmit": {
       "population": "380.831",
       "eventCount": 0,
-      "additionalInfo": ""
+      "additionalInfo": "20.30 merkez bankasi önü"
     },
     "kahramanmaras": {
       "population": "1.134.105",
       "eventCount": 0,
-      "additionalInfo": ""
+      "additionalInfo": "20.00 NFK Kültür Merkezi Önü"
     },
     "karabuk": {
       "population": "250.478",
       "eventCount": 0,
-      "additionalInfo": ""
+      "additionalInfo": "16.00 Safranbolu Sunal Tülbentçi Öğretmenevi Misakı Milli Demokrasi Meydanı"
     },
     "karaman": {
       "population": "262.791",
@@ -242,7 +242,7 @@ window.citiesData = {
     "kayseri": {
       "population": "1.452.458",
       "eventCount": 0,
-      "additionalInfo": ""
+      "additionalInfo": "14.00 MİMAR SİNAN PARKI"
     },
     "kilis": {
       "population": "156.739",
@@ -257,7 +257,7 @@ window.citiesData = {
     "kirklareli": {
       "population": "379.031",
       "eventCount": 0,
-      "additionalInfo": ""
+      "additionalInfo": "20.30 Dingiloğlu Parkı"
     },
     "kirsehir": {
       "population": "244.546",
@@ -267,12 +267,12 @@ window.citiesData = {
     "kocaeli": {
       "population": "2.130.006",
       "eventCount": 0,
-      "additionalInfo": ""
+      "additionalInfo": "20.30 Merkez Bankası Önü"
     },
     "konya": {
       "population": "2.330.024",
       "eventCount": 0,
-      "additionalInfo": ""
+      "additionalInfo": "20.30 Atatürk Anıtı"
     },
     "kutahya": {
       "population": "571.078",
@@ -282,12 +282,12 @@ window.citiesData = {
     "malatya": {
       "population": "750.491",
       "eventCount": 0,
-      "additionalInfo": ""
+      "additionalInfo": "19.30 Paşaköşkü Mahallesi, İsmetpaşa Caddesi, Paşaköşkü Camii önü"
     },
     "manisa": {
       "population": "1.475.353",
       "eventCount": 0,
-      "additionalInfo": ""
+      "additionalInfo": "21.00 CHP Akhisar İlçe Başkanlığı Önü"
     },
     "mardin": {
       "population": "895.911",
@@ -302,7 +302,7 @@ window.citiesData = {
     "mugla": {
       "population": "1.081.867",
       "eventCount": 0,
-      "additionalInfo": ""
+      "additionalInfo": "20.30 Sınırsızlık Meydanı"
     },
     "mus": {
       "population": "392.301",
@@ -322,7 +322,7 @@ window.citiesData = {
     "ordu": {
       "population": "770.711",
       "eventCount": 0,
-      "additionalInfo": ""
+      "additionalInfo": "15.00  19 Eylül Ortaokulu"
     },
     "osmaniye": {
       "population": "561.061",
@@ -337,12 +337,12 @@ window.citiesData = {
     "sakarya": {
       "population": "1.110.735",
       "eventCount": 0,
-      "additionalInfo": ""
+      "additionalInfo": "20.30 CHP Sakarya İl Başkanlığı"
     },
     "samsun": {
       "population": "1.382.376",
       "eventCount": 0,
-      "additionalInfo": ""
+      "additionalInfo": "20.00 Atakum Ömer Halisdemir Parkı - 19.00 Atatürk Onur Anıtı"
     },
     "urfa": {
       "population": "2.237.745",
@@ -367,7 +367,7 @@ window.citiesData = {
     "sivas": {
       "population": "637.007",
       "eventCount": 0,
-      "additionalInfo": ""
+      "additionalInfo": "20.00 Kafeler Sokağı"
     },
     "tekirdag": {
       "population": "1.187.162",
@@ -377,7 +377,7 @@ window.citiesData = {
     "tokat": {
       "population": "612.674",
       "eventCount": 0,
-      "additionalInfo": ""
+      "additionalInfo": "21.00 Yenişehir Cami Jandarmanın Önü"
     },
     "trabzon": {
       "population": "822.270",
