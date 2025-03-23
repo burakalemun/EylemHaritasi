@@ -129,6 +129,38 @@ span {
     color: #333;
 }
 
+.data-info {
+    white-space: pre-line;
+}
+
+.sandik-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.sandik-link a {
+    font-size: 1.5rem;
+    color: #6e0000;
+    text-shadow: 0 0 5px #ff263e, 0 0 10px #e71927, 0 0 20px #e71927;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    background-color: rgb(239, 232, 232);
+}
+
+.sandik-link a:hover {
+    transform: scale(1.05);
+    text-shadow: 0 0 10px #6e0000, 0 0 20px #6e0000;
+    border-color: #6e0000;
+    color: #6e0000;
+}
+
 @media (max-width: 768px) {
     .header_text {
         font-size: 24px;
@@ -171,5 +203,20 @@ span {
 
     span {
         font-size: 13px;
+    }
+
+    .sandik-link a {
+        font-size: 1.1rem;
+        padding: 8px 16px;
+    }
+
+    .header_text {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .mapdiv svg {
+        width: 100% !important;
+        height: auto !important;
     }
 }

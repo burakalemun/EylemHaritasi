@@ -124,6 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
       Nüfus: ${citiesData[cityId]?.population || 'Bilinmiyor'}<br>
       Etkinlik Sayısı: ${citiesData[cityId]?.eventCount || 'Bilinmiyor'}<br>
       <div class="data-info">${citiesData[cityId]?.additionalInfo || 'Ekstra bilgi mevcut değil.'}</div>
+      
     `;
 
     tooltipsContainer.appendChild(tooltip);
