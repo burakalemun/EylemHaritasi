@@ -37,12 +37,12 @@ window.citiesData = {
     "ankara": {
       "population": "5.864.049",
       "eventCount": 0,
-      "additionalInfo": "Bugün Ön Seçim Var! \n"
+      "additionalInfo": "Bugün Ön Seçim Var! \n21:00 - Ankara İl Başkanlığı (Güvenpark)"
     },
     "antalya": {
       "population": "2.722.103",
       "eventCount": 0,
-      "additionalInfo": "Bugün Ön Seçim Var! \n"
+      "additionalInfo": "Bugün Ön Seçim Var! \n21:00 - Antalya İl Başkanlığı"
     },
     "ardahan": {
       "population": "91.354",
@@ -57,7 +57,7 @@ window.citiesData = {
     "aydin": {
       "population": "1.165.943",
       "eventCount": 0,
-      "additionalInfo": "Bugün Ön Seçim Var! \n"
+      "additionalInfo": "Bugün Ön Seçim Var! \n20:30 - CHP AYDIN İl Başkanlığı Önü"
     },
     "balikesir": {
       "population": "1.276.096",
@@ -107,7 +107,7 @@ window.citiesData = {
     "bursa": {
       "population": "3.238.618",
       "eventCount": 0,
-      "additionalInfo": "Bugün Ön Seçim Var! \n"
+      "additionalInfo": "Bugün Ön Seçim Var! \n20:30 - Etibak Önü"
     },
     "canakkale": {
       "population": "568.966",
@@ -162,7 +162,7 @@ window.citiesData = {
     "eskisehir": {
       "population": "921.630",
       "eventCount": 0,
-      "additionalInfo": "Bugün Ön Seçim Var! \n"
+      "additionalInfo": "Bugün Ön Seçim Var! \n19.00 - Espark Bağlar girişi\n19:00 - ESPARK Bağlar Kapısı Önü"
     },
     "gaziantep": {
       "population": "2.193.363",
@@ -202,12 +202,12 @@ window.citiesData = {
     "istanbul": {
       "population": "15.701.602",
       "eventCount": 0,
-      "additionalInfo": "Bugün Ön Seçim Var! \n"
+      "additionalInfo": "Bugün Ön Seçim Var! \n 20:30 - SARAÇHANE\n20:30 - Beylikdüzü Belediyesi Önü\n 17:30 - Kadıköy Bahariye caddesi (Starbucks önü)"
     },
     "izmir": {
       "population": "4.493.242",
       "eventCount": 0,
-      "additionalInfo": "Bugün Ön Seçim Var! \n"
+      "additionalInfo": "Bugün Ön Seçim Var! \n18:30 - Alsancak ÖSYM Binası önü \n20:00 - Alsancak Gündoğdu Meydanı\n 21:00 - Alsancak Garı Önü"
     },
     "izmit": {
       "population": "380.831",
@@ -297,7 +297,7 @@ window.citiesData = {
     "mersin": {
       "population": "1.954.279",
       "eventCount": 0,
-      "additionalInfo": "Bugün Ön Seçim Var! \n"
+      "additionalInfo": "Bugün Ön Seçim Var! \n20:00 Özgecan Aslan Barış Meydanı"
     },
     "mugla": {
       "population": "1.081.867",
@@ -372,7 +372,7 @@ window.citiesData = {
     "tekirdag": {
       "population": "1.187.162",
       "eventCount": 0,
-      "additionalInfo": "Bugün Ön Seçim Var! \n"
+      "additionalInfo": "Bugün Ön Seçim Var! \n15:30 - Tekirdağ NKÜ"
     },
     "tokat": {
       "population": "612.674",
@@ -382,7 +382,7 @@ window.citiesData = {
     "trabzon": {
       "population": "822.270",
       "eventCount": 0,
-      "additionalInfo": "Bugün Ön Seçim Var! \n"
+      "additionalInfo": "Bugün Ön Seçim Var! \n21:00 - Kahramanmaraş Caddesi (Koton üstü)"
     },
     "tunceli": {
       "population": "86.612",
