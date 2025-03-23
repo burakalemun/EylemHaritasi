@@ -202,7 +202,7 @@ window.citiesData = {
     "istanbul": {
       "population": "15.701.602",
       "eventCount": 0,
-      "additionalInfo": "Bugün Ön Seçim Var! \n 20:30 - SARAÇHANE\n20:30 - Beylikdüzü Belediyesi Önü\n 17:30 - Kadıköy Bahariye caddesi (Starbucks önü)"
+      "additionalInfo": "Bugün Ön Seçim Var! \n 20:30 - SARAÇHANE\n20:30 - Beylikdüzü Belediyesi Önü\n 17:30 - Kadıköy Bahariye caddesi (Starbucks Önü)"
     },
     "izmir": {
       "population": "4.493.242",
